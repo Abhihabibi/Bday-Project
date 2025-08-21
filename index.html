@@ -79,29 +79,38 @@
   </div>
 
   <script>
-    // 100 Preloaded "No" messages
+    // 30 high quality "No" messages
     const noMessages = [
-      "Really Aastha? 😢",
-      "Come on betu, don’t tease me 😍",
-      "Chikki babu, I know you love your Chiku 🥰",
-      "Don’t lie, meri jaan ❤️",
-      "You can’t fool me, meri chikki babu 💕",
-      "Even if you say no, I know your dil says YES 💖",
-      "Na bolkar bhi tum meri ho 😘",
-      "Chiku knows Aastha’s dil better than Aastha 💕",
-      "Aastha, tum toh meri jaan ho ❤️",
-      "Betu, stop teasing your Chiku 😘",
-      "You’re my forever love, so no ka matlab bhi yes hai 💝",
-      "Meri pyaari Aastha, no kabhi option hi nahi hai 💖",
-      "Babu, tumhe pata hai na tum meri sab kuch ho 🥺❤️",
-      "No bolke bhi tum hi meri ho betu 💕",
-      "Meri jaan, tumhe pata hai tum meri zindagi ho 💖",
-      "Aastha = Love ❤️",
-      "Dil se toh tum hamesha yes kehti ho 💕",
-      "Aastha meri jaan hai, bas 💖",
-      "Tum meri betu ho aur hamesha rahogi ❤️",
-      "Na bolna bhi tumhari cute masti hai 🥺"
-      // 👉 add up to 100 similar messages here
+      "Really betu? 😢 But I know dil se you’re mine ❤️",
+      "Aastha, tum mujhe majak mein bhi no nahi keh sakti 🥺",
+      "No ka matlab hai hug chahiye 😘",
+      "Aastha, tum meri jaan ho aur rahogi 💕",
+      "Even if you say no, your eyes always say YES 💖",
+      "Chikki babu, tum toh meri forever ho ❤️",
+      "Stop teasing me betu 😍 mujhe pata hai tum pyaar karti ho",
+      "No bolkar bhi tum kitni cute lagti ho 🥰",
+      "Tum meri heartbeat ho 💓 aur dil kabhi no nahi kehta",
+      "Jitna bhi no bolo, main sirf yes sunta hoon 😘",
+      "Aastha = Love ❤️ equation solved",
+      "No is just your shaitani style, pyaar toh unlimited hai 💖",
+      "Tum meri khushi ho, no ka koi matlab nahi 🥺",
+      "Betu, no bolkar bhi tum meri smile ki wajah ho 😊",
+      "Meri chikki babu, tum meri addiction ho ❤️",
+      "No? Matlab tumhe aur pyaar chahiye 😍",
+      "Tum meri duniya ho aur duniya kabhi no nahi kehti 💕",
+      "Aastha, tum meri best gift ho 🎁❤️",
+      "No sirf ek word hai, tum meri hamesha ho 💖",
+      "Tum meri zindagi ki sabse khoobsurat line ho 🥰",
+      "Betu, tum meri jaan ho aur main tumhara Chiku forever ❤️",
+      "No bolke bhi tumhari aankhein YES bolti hain 😘",
+      "Tum meri cute si shaitaan aur meri pari dono ho 💕",
+      "Meri jaan, tum meri khushbu ho 🌸",
+      "No ka matlab hai ek kiss pending hai 😍",
+      "Tum meri ek hi dua ka jawab ho ❤️",
+      "Aastha, tum meri fairytale ho 💖",
+      "No bolna tumhari cuteness ka style hai 😘",
+      "Tum meri soulmate ho, soulmate kabhi no nahi kehte ❤️",
+      "Meri betu, meri chikki babu, tum meri sab kuch ho 💕"
     ];
 
     let used = new Set();
@@ -109,10 +118,8 @@
     function sayNo() {
       const question = document.getElementById("question");
 
-      // Get unused messages
       let available = noMessages.filter(msg => !used.has(msg));
 
-      // Reset if all are used
       if (available.length === 0) {
         used.clear();
         available = noMessages;
